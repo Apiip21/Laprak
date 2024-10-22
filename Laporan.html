@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>PRAKTIKUM</title>
+  </head>
+  <body>
+    <h2>TAG PADA HTML</h2>
+
+    <ol>
+      <li class="list"><b>Apa Yang dimaksud tag pada HTML?</b></li>
+      <p>
+        Tag dalam HTML adalah elemen markup yang digunakan untuk membuat
+        struktur dokumen HTML. Mereka memberitahu browser bagaimana menampilkan
+        konten di dalam dokumen.
+      </p>
+      <li class="list">
+       <b>Apa itu pembuka dan penutup tag? Apakah hal tersebut terdapat pada semua
+        jenis tag?</b> 
+      </li>
+      <p>
+        Tag pembuka biasanya terdiri dari nama tag yang dilingkupi oleh tanda
+        kurung sudut <>. Tag penutup memiliki bentuk yang sama, tetapi
+        ditambahkan garis miring. Tidak semua tag memiliki penutup, contohnya
+        tag seperti
+        <code>img</code>
+        atau
+        <code>br</code>
+      </p>
+    </ol>
+    <h2>ELEMENT</h2>
+    <ol>
+      <li class="list"><b>Apa yang dimaksud dengan element?</b></li>
+      <p>Elemen HTML terdiri dari tag pembuka, isi konten, dan tag penutup.</p>
+      <li class="list">
+        <b>Apa yang dimaksud dengan tagname, attribute, dan content pada elemen?</b>
+      </li>
+      <p>
+        Tagname adalah nama dari tag.Attribute adalah informasi tambahan yang
+        memberikan instruksi khusus untuk elemen. Content adalah isi atau teks
+        yang ada di dalam elemen.
+      </p>
+      <li class="list">
+        <b>Apakah elemen dapat ditumpuk? Apa yang terjadi bila demikian?</b>
+      </li>
+      <p>
+        Elemen dapat ditumpuk atau bersarang (nested), yang berarti satu elemen
+        berada di dalam elemen lainnya. Jika tumpukan tidak benar, itu bisa
+        menyebabkan tampilan dan fungsi yang tidak diinginkan pada halaman.
+      </p>
+    </ol>
+<h2>ANCHOR</h2>
+    <ol>
+        <li class="list"><b>Apa yang dimaksud dengan anchor?</b> </li>
+        <P>Anchor dalam HTML menggunakan tag <a> untuk membuat hyperlink yang mengarahkan ke lokasi lain.</P>
+        <li class="list"><b>Bagaimana caranya anchor dapat berfungsi, baik dari sisi pendefinisian maupun pengaplikasiannya?</b></li>
+        <p>Anchor bekerja dengan memasukkan URL ke dalam atribut href. Saat di-klik, itu akan mengarahkan pengguna ke URL yang telah ditentukan.</p>
+    </ol>
+
+    <h2>MULTIMEDIA HTML(TEXT,IMAGE,AUDIO,VIDEO)</h2>
+    <table border="1" style="text-align: center;">
+        <tr style="font-weight: bold;">
+            <td>TEXT</td>
+            <td>IMAGE</td>
+            <td>AUDIO</td>
+            <td>VIDEO</td>
+
+
+        </tr>
+        <tr>
+            <td><b>1. Sebutkan tag yang dapat digunakan untuk memanipulasi konten teks pada HTML. Jelaskan fungsinya secara singkat!</b></td>
+            <td><b>1. Apabila sebuah tag image tidak menampilkan gambar sebagaimana seharusnya, apa saja yang mungkin menyebabkan hal tersebut?</b></td>
+        <td><b>1. Apabila ternyata ada teks yang menggantikan gambar tersebut, apa yang sebenarnya terjadi?</b></td>
+        <td><b>1. Bagaimana caranya untuk kita dapat memasukkan audio source dari web (non-lokal)?</b></td>
+    </tr>
+
+        <tr>
+            <td><b>2. Sebutkan tag yang dapat digunakan untuk memanipulasi struktur konten teks pada HTML!</b></td>
+            <td><b>2. Apabila ternyata ada teks yang menggantikan gambar tersebut, apa yang sebenarnya terjadi?</b></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Jawaban No 1. : Contohnya tag seperti b, i, p dan h1 yang digunakan untuk merubah gaya dan tampilan teks</td>
+            <td>Jawaban No 1 : Kesalahan bisa terjadi jika URL gambar salah, format file tidak didukung, atau atribut src tidak diisi dengan benar. </td>
+            <td>Jawaban : Gunakan tag dengan atribut src yang berisi URL dari file audio di web.</td>
+            <td>Jawaban : Pastikan atribut autoplay diatur dengan benar dan kompatibel dengan browser yang digunakan. Selain itu, beberapa browser mungkin
+                 memblokir fitur autoplay untuk video dengan suara, sehingga perlu memastikan volume disetel ke 0 atau memberikan izin manual di pengaturan browser.</td>
+        </tr>
+        <tr>
+            <td>Jawaban No 2 : Contoh tag struktur seperti div, span, dan section.</td>
+            <td>Jawaban No 2 : Ini berarti atribut alt yang berisi teks pengganti aktif, karena gambar tidak dapat dimuat.</td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <br><br>
+<head>
+    <link rel="stylesheet" href="force.css">
+    <title>Tugas form"></form></title>
+</head>
+<body>
+    <section class="form">
+        <div>
+            <h2>Form Input Data Mahasiswa</h2>
+            <div>
+                <form action="Selelsai.html">
+
+                    <div>
+                        <label for="nama">Nama Lengkap:</label>
+                        <input type="text" id="nama" name="nama" placeholder="Masukkan Nama Anda" required>
+                    </div>
+                    
+                    <div>
+                        <label for="nim">Nim:</label>
+                        <input type="text" id="nim" name="nim" placeholder="Masukkan Nim Anda" required>
+                    </div>
+
+                    <div>
+                        <label for="tanggal">Tanggal Input Data:</label>
+                        <input type="date" id="tanggal-input" name="tanggal">
+                    </div>
+
+                    <input type="submit" class="submit" value="Submit">
+                    <!-- <div class="submit">
+                    <a href="#" value="submit">Submit</a>
+                    </div> -->
+
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+  </body>
+</html>
